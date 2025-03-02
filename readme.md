@@ -7,6 +7,8 @@ $ npx tsc --init
 $ npm login
 $ npm publish
 
+$ npx barriedirk-exercise-tiny-npm-deploy
+
 ```
 
 
