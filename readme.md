@@ -1,5 +1,12 @@
 ```shell
 $ npx tsc --init
+
+
+...
+
+$ npm login
+$ npm publish
+
 ```
 
 
