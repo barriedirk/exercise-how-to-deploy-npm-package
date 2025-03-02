@@ -1,4 +1,4 @@
-It's a small project to learn how to deploy a package into npm, which parts of your package.json you need to touch
+It's a small project to learn how to deploy a package into npm, and which parts of your package.json you need to touch.
 
 which command you need to execute
 
