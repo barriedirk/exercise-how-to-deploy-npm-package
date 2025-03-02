@@ -1,3 +1,9 @@
+It's a small project to learn how to deploy a package into npm, which parts of your package.json you need to touch
+
+which command you need to execute
+
+
+
 ```shell
 $ npx tsc --init
 
@@ -16,7 +22,7 @@ $ barriedirk-exercise-tiny-npm-deploy
 ```
 
 
-note: files indicate the files that should be sent to npm
+note: files:[ "dist" ] indicate the files that should be sent to npm
 
 
 {
@@ -29,11 +35,14 @@ note: files indicate the files that should be sent to npm
   ],
 
 
+main point: 
 
   "publishConfig": {
     "access": "public"
   },
   "bin": "dist/index.js",
+
+
 
 add prepublishOnly
 
@@ -43,8 +52,10 @@ add prepublishOnly
   },
 
 
+Explanation aobut the line *#!/usr/bin/env node*
+from chatgtp
 
-  The line #!/usr/bin/env node is called a shebang (or hashbang) and is used in scripts to indicate the path of the interpreter that should be used to run the file.
+The line #!/usr/bin/env node is called a shebang (or hashbang) and is used in scripts to indicate the path of the interpreter that should be used to run the file.
 
 Here's a breakdown of what each part does:
 
@@ -57,12 +68,10 @@ This shebang allows you to run the TypeScript (or JavaScript) file as an executa
 Without the shebang, you'd need to run:
 
 bash
-Copy
 node script.ts
 With the shebang (#!/usr/bin/env node), you can make the file executable and run it directly:
 
 bash
-Copy
 ./script.ts
 For this to work, you'd typically need to give the file executable permissions (e.g., using chmod +x script.ts on Unix-based systems).
 
