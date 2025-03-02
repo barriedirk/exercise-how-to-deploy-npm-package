@@ -9,6 +9,10 @@ $ npm publish
 
 $ npx barriedirk-exercise-tiny-npm-deploy
 
+
+$ npm install -g barriedirk-exercise-tiny-npm-deploy
+$ barriedirk-exercise-tiny-npm-deploy
+
 ```
 
 
